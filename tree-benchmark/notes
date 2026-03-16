@@ -29,3 +29,13 @@ python -m py_compile tree-benchmark/backend/bplus.py
 ## Ejecutar tree-benchmark/backend/generate_dataset.py
 python tree-benchmark/backend/generate_dataset.py --mode ordered
 python tree-benchmark/backend/test_bplus_dataset.py
+
+
+## Ejecutar tree-benchmark/backend/generate_dataset.py
+python tree-benchmark/backend/generate_dataset.py --mode ordered
+python tree-benchmark/backend/benchmark.py
+
+## Ejecutar run all
+python tree-benchmark/backend/run_all.py --mode ordered
+# o
+python tree-benchmark/backend/run_all.py --mode random

@@ -7,7 +7,7 @@ import csv
 import random
 from pathlib import Path
 
-TOTAL_USERS = 10_000
+TOTAL_USERS = 1_000
 MIN_AGE = 18
 MAX_AGE = 60
 SEED = 42
