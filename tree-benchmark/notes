@@ -18,3 +18,14 @@ python tree-benchmark/backend/generate_dataset.py --mode random
 ##Ejecucion de  tree-benchmark/backend/generate_dataset.py:
 python tree-benchmark/backend/generate_dataset.py --mode ordered
 python tree-benchmark/backend/test_abb_dataset.py
+
+
+##Ejecucion de ree-benchmark/backend/bplus.py
+python tree-benchmark/backend/bplus.py
+
+Validar sintaxis:
+python -m py_compile tree-benchmark/backend/bplus.py
+
+## Ejecutar tree-benchmark/backend/generate_dataset.py
+python tree-benchmark/backend/generate_dataset.py --mode ordered
+python tree-benchmark/backend/test_bplus_dataset.py
