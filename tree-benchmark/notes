@@ -1,15 +1,20 @@
-Ejercucion de tree-benchmark/backend/generate_dataset.py
+##Ejercucion de tree-benchmark/backend/generate_dataset.py
 python tree-benchmark/backend/generate_dataset.py --mode ordered
 python tree-benchmark/backend/generate_dataset.py --mode random
 
-Testing:
+##Testing:
 python tree-benchmark/backend/generate_dataset.py --mode ordered && python tree-benchmark/backend/generate_dataset.py --mode random && python - <<'PY' import csv from pathlib import Path p=Path('tree-benchmark/backend/data/users.csv') with p.open() as f: r=list(csv.DictReader(f)) print(len(r), r[0]['id'], r[-1]['id']) print('unique ids', len({x['id'] for x in r})) print('unique emails', len({x['email'] for x in r})) PY
 
 python tree-benchmark/backend/generate_dataset.py --mode ordered >/dev/null && python - <<'PY' import csv from pathlib import Path p=Path('tree-benchmark/backend/data/users.csv') with p.open() as f: ids=[int(row['id']) for row in csv.DictReader(f)] print(ids[:3], ids[-3:], ids==sorted(ids)) PY
 
 git status --short
 
-Ejecucion de tree-benchmark/backend/abb.py
+##Ejecucion de tree-benchmark/backend/abb.py
 python tree-benchmark/backend/abb.py
 
 python tree-benchmark/backend/generate_dataset.py --mode random
+
+
+##Ejecucion de  tree-benchmark/backend/generate_dataset.py:
+python tree-benchmark/backend/generate_dataset.py --mode ordered
+python tree-benchmark/backend/test_abb_dataset.py
