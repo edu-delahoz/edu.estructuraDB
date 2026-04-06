@@ -1,0 +1,13 @@
+# Soluciones a Problemas Criptográficos con Python
+
+Este notebook presenta soluciones en Python para dos problemas relacionados con criptografía y estructuras de datos:
+
+## Problema 1: Inversión de Hash SHA-256 (Fuerza Bruta)
+
+Se aborda el problema de encontrar una secuencia numérica de 10 enteros (del 0 al 9) que, al ser concatenados y hasheados con SHA-256, generen un hash objetivo específico. La solución implementa un enfoque de fuerza bruta, probando todas las combinaciones posibles hasta encontrar la coincidencia.
+
+## Problema 2: Determinación del Orden de Transacciones en un Árbol de Merkle
+
+Este problema busca determinar el orden original de un conjunto conocido de transacciones para reconstruir un Merkle Root específico. La solución utiliza permutaciones de las transacciones dadas, calculando el Merkle Root para cada orden posible hasta que coincide con el objetivo. Además, se incluye una función auxiliar para calcular el Merkle Root dado un conjunto de transacciones.
+
+Ambas soluciones están diseñadas con un enfoque en la simplicidad y claridad, utilizando lógica directa para resolver los desafíos planteados.
